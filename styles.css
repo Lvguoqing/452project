@@ -1,0 +1,164 @@
+/* 全局样式 */  
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+}  
+  
+header {  
+    background-color: #5ebcef;  
+    padding: 20px;  
+    text-align: center;  
+}  
+  
+nav a {  
+    color: #fff;  
+    text-decoration: none;  
+    padding: 10px 15px;  
+    margin-right: 5px;  
+    border-radius: 5px;  
+    transition: background-color 0.3s ease;  
+}  
+  
+/* 链接悬停样式 */  
+nav a:hover {  
+    background-color: #0deac5;  
+}
+  
+main {  
+    padding: 20px;  
+}  
+.products {  
+    display: flex;  
+    flex-wrap: wrap; /* If line breaks are needed */  
+  }     
+  .product {    
+    /* Remove text align: center; Style to display images and buttons starting from the left side */  
+    margin-bottom: 20px; /* The spacing between each product */  
+  }    
+  .product-item { /* Add container class */  
+    display: flex; /* Use Flex layout to display images and buttons on one line */  
+    flex-direction: column; /* The default is column, but it can also be explicitly specified */  
+    align-items: flex-start; /* Align content from the left */
+    margin-right: 10px; /* Optional: Add right margin to each project */  
+  }  
+  .product-item:last-child {  
+    margin-right: 0;  
+  }
+  .product-image {    
+    width: 250px;  
+    height: auto;  
+    display: block; /* Ensure that the image is a block level element */  
+    margin: 0; /* Remove margin as spacing has already been controlled in the. product item */  
+  }    
+  .product-name {    
+    margin-top: 10px; /* The spacing between buttons and images */  
+    cursor: pointer;    
+  }    
+  .product-modal {    
+    display: none; /* Hidden by default */  
+    position: fixed; /* Stay in place */  
+    z-index: 1; /* Sit on top */  
+    left: 0;  
+    top: 0;  
+    width: 100%; /* Full width */  
+    height: 100%; /* Full height */  
+    overflow: auto; /* Enable scroll if needed */  
+    background-color: rgba(0,0,0,0.4); /* Fallback color */  
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */  
+  }  
+    
+  .product-modal-content {  
+    background-color: lightgrey;  
+    margin: 15% auto; /* 15% from the top and centered */  
+    padding: 20px;  
+    border: 1px solid red;  
+    width: 50%; /* Could be more or less, depending on screen size */  
+  }  
+    
+  /* The Close Button */  
+  .close {  
+    color: #aaa;  
+    float: right;  
+    font-size: 28px;  
+    font-weight: bold;  
+  }  
+    
+  .close:hover,  
+  .close:focus {  
+    color: lightblue;  
+    text-decoration: none;  
+    cursor: pointer;  
+  }  
+  
+  
+footer {  
+    background-color: #746d6d;  
+    text-align: center;  
+    padding: 3px;  
+    position: fixed;  
+    left: 0;  
+    bottom: 0;  
+    width: 100%;  
+}  
+  
+/* 响应式布局 */  
+@media (max-width: 600px) {  
+    nav a {  
+        display: block;  
+        margin: 10px 0;  
+    }  
+}
+/* styles.css */  
+  
+/* 为右侧内容添加样式 */  
+.right-content {  
+    float: right; /* 使内容浮动到右侧 */  
+    width: 50%; /* 占据容器宽度的50% */  
+    padding: 20px; /* 添加一些内边距 */  
+    box-sizing: border-box; /* 确保padding和border不会增加元素的宽度 */  
+}  
+  
+/* 如果需要，也可以为主内容区域添加样式 */  
+.main-content {  
+    float: left; /* 使内容浮动到左侧（如果需要的话） */  
+    width: 50%; /* 占据容器宽度的50% */  
+    padding: 20px; /* 添加一些内边距 */  
+    box-sizing: border-box; /* 确保padding和border不会增加元素的宽度 */  
+}
+/* styles.css */  
+.center-image {  
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;  
+    max-width: 100%; /* 确保图片不会超出其容器宽度 */  
+}
+.container {  
+    display: flex;  
+    background-color: lightgrey; 
+    justify-content: space-between;  
+    align-items: flex-start;  
+    margin: 20px;  
+}  
+
+.image-container {  
+    flex: 0 0 40%; /* 宽度固定为40% */  
+    background-color: lightgrey;
+}  
+
+.image-container img {  
+    width: 100%;  
+    height: auto;  
+    display: block;
+    margin-bottom: 10px;  
+    background-color: lightgrey;
+}  
+.content-container {  
+    flex: 0 0 55%; /* 宽度固定为55%，以适应内容并留出一些空间 */  
+    background-color: lightgrey; 
+    padding-left: 20px;  
+}  
+
+h1 {  
+    text-align: center;  
+}  
